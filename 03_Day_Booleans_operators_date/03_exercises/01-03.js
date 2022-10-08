@@ -72,3 +72,32 @@ let a = parseInt(prompt('Enter side a: '))
 let b = parseInt(prompt('Enter side b: '))
 let c = parseInt(prompt('Enter side c: '))
 console.log('The perimeter of the triangle is', a + b + c)
+
+// do testowania w przeglądarce
+let length2 = parseFloat(prompt("Enter length:"))
+let width2 = parseFloat(prompt("Enter width:"))
+let resultAreaRectangle = length2 * width2
+let resultPerimeterRectangle = 2 * (length2 + width2)
+console.log("Area of rectangle is", resultAreaRectangle)
+console.log("Perimeter of rectangle is", resultPerimeterRectangle)
+
+// do testowania w przeglądarce
+let radius = parseFloat(prompt("Enter radius:"))
+let resultAreaCircle = Math.PI * radius * radius
+let resultCircumferenceCircle = 2 * Math.PI * radius
+console.log("Area of circle is", resultAreaCircle)
+console.log("Circumference of circle is", resultCircumferenceCircle)
+
+let y = 2 * 0 - 2
+let x = (0 + 2) / 2
+let x1y1 = [0, y]
+let x2y2 = [x, 0]
+let slope = (x2y2[1] - x1y1[1]) / (x2y2[0] - x1y1[0])
+console.log("Slope of y = 2x - 2 is", slope,
+            ", x-intercept is", x2y2,
+            "and y-intercept is", x1y1)
+
+let point1 = [2, 2]
+let point2 = [6, 10]
+let slope2 = (point2[1] - point1[1]) / (point2[0] - point1[0])
+console.log("Slope of", point1, "and", point2, "is", slope2)
