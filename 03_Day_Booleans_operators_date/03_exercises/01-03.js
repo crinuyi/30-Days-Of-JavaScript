@@ -101,3 +101,73 @@ let point1 = [2, 2]
 let point2 = [6, 10]
 let slope2 = (point2[1] - point1[1]) / (point2[0] - point1[0])
 console.log("Slope of", point1, "and", point2, "is", slope2)
+
+
+let delta = [0, -3]
+let deltaResult = delta[1]*delta[1] + 6*delta[1] + 9
+console.log("for y=" + deltaResult + " x value is " + delta[1])
+
+// do testowania w przeglądarce
+let hours = parseInt(prompt("Enter hours: "))
+let ratePerHour = parseInt(prompt("Enter rate per hour: "))
+console.log("Your weekly earning is ", hours*ratePerHour)
+
+// do testowania w przeglądarce
+let nameLength = prompt("Enter name:")
+if(nameLength.length > 7)
+    console.log("Your name is long")
+else console.log("Your name is short")
+
+// do testowania w przeglądarce
+let nameLength2 = prompt("Enter name:")
+let surnameLength2 = prompt("Enter surname:")
+if(nameLength2.length > surnameLength2)
+    console.log("Your name, ", nameLength2, "is longer than your surname, ", surnameLength2)
+else console.log("Your name, ", nameLength2, "is shorter than your surname, ", surnameLength2)
+
+let myAge = 250
+let yourAge = 25
+if(myAge < 0 && yourAge < 0)
+    console.log("Wrong input!")
+else if (myAge == yourAge)
+    console.log("We're of the same age")
+else if (myAge > yourAge)
+    console.log("I am", myAge-yourAge, "years older than you")
+else
+    console.log("You are", yourAge-myAge, "years older than me")
+
+// do testowania w przeglądarce
+let birthYear = parseInt(prompt("Enter your birth year:"))
+let checkAge = currDate.getFullYear()-birthYear
+if (checkAge >= 18)
+    console.log("You are old enough to drive")
+else console.log("You are not old enough to drive, you need to wait for", 18-(18-checkAge), "year(s)")
+
+// do testowania w przeglądarce
+let yearsYouLive = parseInt(prompt("Enter your age:"))
+console.log("You lived for", yearsYouLive*60*60*24*365, "seconds.")
+
+console.log(currDate.getFullYear(), "-",
+            currDate.getMonth(), "-",
+            currDate.getDate(), " ",
+            currDate.getHours(), ":",
+            currDate.getMinutes())
+console.log(currDate.getDate(), "-",
+            currDate.getMonth(), "-",
+            currDate.getFullYear(), " ",
+            currDate.getHours(), ":",
+            currDate.getMinutes())
+            console.log(currDate.getDate(), "/",
+            currDate.getMonth(), "/",
+            currDate.getFullYear(), " ",
+            currDate.getHours(), ":",
+            currDate.getMinutes())
+
+const resultDate = currDate.toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit"
+})
+console.log(resultDate)
