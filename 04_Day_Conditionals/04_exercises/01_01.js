@@ -1,0 +1,6 @@
+let age = prompt('Enter your age:')
+if (age < 0)
+    alert ('Invalid age')
+else if (age > 18) 
+    alert('You are old enough to drive')
+else alert(`You are left with ${18 - age} year(s) to drive`)

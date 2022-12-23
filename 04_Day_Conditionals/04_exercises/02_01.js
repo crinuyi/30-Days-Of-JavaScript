@@ -1,0 +1,7 @@
+let score = prompt('Enter your score:')
+if (score < 100 && score > 80) alert('Your grade is A')
+else if (score < 79 && score > 70) alert('Your grade is B')
+else if (score < 69 && score > 60) alert('Your grade is C')
+else if (score < 59 && score > 50) alert('Your grade is D')
+else if (score < 49 && score >= 0) alert('Your grade is F')
+else alert('Invalid score')
