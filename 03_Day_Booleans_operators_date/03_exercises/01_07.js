@@ -1,0 +1,8 @@
+let currDate = new Date()
+console.log(currDate.getFullYear())
+console.log(currDate.getMonth() + 1)
+console.log(currDate)
+console.log(currDate.getDay() + 1)
+console.log(currDate.getHours())
+console.log(currDate.getMinutes())
+console.log(currDate.getTime())

@@ -1,0 +1,5 @@
+let nameLength2 = prompt("Enter name:")
+let surnameLength2 = prompt("Enter surname:")
+if(nameLength2.length > surnameLength2)
+    console.log("Your name, ", nameLength2, "is longer than your surname, ", surnameLength2)
+else console.log("Your name, ", nameLength2, "is shorter than your surname, ", surnameLength2)

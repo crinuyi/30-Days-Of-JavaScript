@@ -1,0 +1,1 @@
+let firstName2 = 'Sample Firstname', lastName2 = 'Sample Lastname', maritialStatus2 = 'taken', country2 = 'France', age2 = 65
