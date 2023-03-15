@@ -1,0 +1,18 @@
+function randomHexaNumberGenerator() {
+    const hex = '0123456789ABCDEF'
+    let output = '#'
+    for (let i = 0; i < 6; ++i) 
+        output += hex.charAt(Math.floor(Math.random() * hex.length))
+    return output
+}
+
+function arrayOfRgbColors(amount) {
+    let arr = []
+    for(let i=0; i<amount; i++) {
+        arr.push(randomHexaNumberGenerator())
+    }
+
+    return arr
+}
+
+console.log(arrayOfRgbColors(5))
