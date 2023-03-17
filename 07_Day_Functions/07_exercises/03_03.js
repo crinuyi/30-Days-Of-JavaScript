@@ -6,7 +6,7 @@ function randomHexaNumberGenerator() {
     return output
 }
 
-function arrayOfRgbColors(amount) {
+function arrayOfHexaColors(amount) {
     let arr = []
     for(let i=0; i<amount; i++) {
         arr.push(randomHexaNumberGenerator())
@@ -15,4 +15,4 @@ function arrayOfRgbColors(amount) {
     return arr
 }
 
-console.log(arrayOfRgbColors(5))
+console.log(arrayOfHexaColors(5))
